@@ -51,6 +51,8 @@
     async function setupFirebase() {
       // Check if firebaseConfig is valid (i.e., has a projectId)
       if (!firebaseConfig || !firebaseConfig.projectId) {
+          // Note: When running locally outside the Canvas environment, Firebase functions will fail.
+          // This message helps debug Canvas setup vs. local running.
           displayError("Firebase configuration is missing (projectId). Cannot initialize the database.");
           return;
       }
@@ -210,7 +212,7 @@
     
     <!-- New Logo Container - Image Logo -->
     <div class="flex flex-col items-center justify-center mb-4">
-        <!-- Logo Image -->
+        <!-- Logo Image: Using the local filename for GitHub Pages -->
         <img src="blob:https://gemini.google.com/c6eb210d-3f69-4558-8d99-3b1bf01733f8" 
              alt="CRSK Academy Logo: Shield, Network, and K symbol"
              class="w-24 h-24 object-cover rounded-xl shadow-2xl" 
