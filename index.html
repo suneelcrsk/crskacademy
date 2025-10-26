@@ -21,13 +21,21 @@
 
     // --- MANDATORY FIREBASE GLOBALS ---
     const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-crsk-app';
-    const firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
+    
+    let firebaseConfig = {};
+    try {
+        firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' && __firebase_config ? __firebase_config : '{}');
+    } catch (e) {
+        console.error("Failed to parse __firebase_config:", e);
+        // firebaseConfig remains {} if parsing fails
+    }
+
     const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
     // ------------------------------------
 
     let db;
     let auth;
-    let userId = 17917977513876034909;
+    let userId = null;
 
     // Custom Error Message Utility
     function displayError(message) {
@@ -41,6 +49,12 @@
 
     // Function to set up Firebase and Authentication
     async function setupFirebase() {
+      // Check if firebaseConfig is valid (i.e., has a projectId)
+      if (!firebaseConfig || !firebaseConfig.projectId) {
+          displayError("Firebase configuration is missing (projectId). Cannot initialize the database.");
+          return;
+      }
+      
       try {
         const app = initializeApp(firebaseConfig);
         db = getFirestore(app);
@@ -194,10 +208,10 @@
 <header class="bg-crsk-blue text-white shadow-lg py-10">
   <div class="max-w-4xl mx-auto px-4 text-center">
     
-    <!-- New Logo Container - Replaced SVG with the Gemini Generated Image -->
+    <!-- New Logo Container - Image Logo -->
     <div class="flex flex-col items-center justify-center mb-4">
-        <!-- New Image Logo -->
-        <img src="Gemini_Generated_Image_qvqlkbqvqlkbqvql.jpg" 
+        <!-- Logo Image -->
+        <img src="blob:https://gemini.google.com/c6eb210d-3f69-4558-8d99-3b1bf01733f8" 
              alt="CRSK Academy Logo: Shield, Network, and K symbol"
              class="w-24 h-24 object-cover rounded-xl shadow-2xl" 
              onerror="this.onerror=null; this.src='https://placehold.co/96x96/4a5568/ffffff?text=Logo';"
@@ -296,4 +310,3 @@
 
 </body>
 </html>
-
