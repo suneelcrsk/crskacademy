@@ -2,95 +2,296 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CRSK Academy — SOC Analyst Training</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRSK.Academy — Cyber Resilience Skill Knowledge</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    import { 
+      getAuth, signInAnonymously, signInWithCustomToken, 
+      onAuthStateChanged 
+    } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+    import { 
+      getFirestore, doc, getDoc, collection, query, onSnapshot, 
+      orderBy, setLogLevel, setDoc
+    } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+    // Set Firebase Debug Log Level
+    setLogLevel('Debug');
+
+    // --- MANDATORY FIREBASE GLOBALS ---
+    const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-crsk-app';
+    const firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
+    const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+    // ------------------------------------
+
+    let db;
+    let auth;
+    let userId = null;
+
+    // Custom Error Message Utility
+    function displayError(message) {
+      const errorDiv = document.getElementById('error-message');
+      if (errorDiv) {
+        errorDiv.textContent = `Error: ${message}. Check console for details.`;
+        errorDiv.classList.remove('hidden');
+      }
+      console.error(message);
+    }
+
+    // Function to set up Firebase and Authentication
+    async function setupFirebase() {
+      try {
+        const app = initializeApp(firebaseConfig);
+        db = getFirestore(app);
+        auth = getAuth(app);
+
+        // Sign in using the custom token or anonymously
+        onAuthStateChanged(auth, async (user) => {
+          if (user) {
+            userId = user.uid;
+            console.log("Firebase Authenticated. User ID:", userId);
+            // Once authenticated, load the data
+            loadDynamicContent();
+          } else {
+            // Sign in anonymously if no token is available or user signed out
+            try {
+              if (initialAuthToken) {
+                await signInWithCustomToken(auth, initialAuthToken);
+              } else {
+                await signInAnonymously(auth);
+              }
+            } catch (error) {
+              displayError(`Authentication failed: ${error.message}`);
+            }
+          }
+        });
+      } catch (error) {
+        displayError(`Firebase Initialization Failed: ${error.message}`);
+      }
+    }
+
+    // Function to load all dynamic content from Firestore
+    function loadDynamicContent() {
+      if (!db || !userId) {
+        console.warn("Database not initialized or user not authenticated.");
+        return;
+      }
+
+      // 1. Load Trainer Info & Next Batch Details (Single Document)
+      const detailsPath = `artifacts/${appId}/public/data/site_details/trainer_info`;
+      const docRef = doc(db, detailsPath);
+      getDoc(docRef).then((docSnap) => {
+        if (docSnap.exists()) {
+          const data = docSnap.data();
+          renderTrainer(data);
+          renderBatch(data);
+        } else {
+          // If doc doesn't exist, provide a default for demonstration
+          setDoc(docRef, {
+            name: "Sunil Kumar C R (Mock)",
+            title: "SOC Manager, Bluecloud Softech Solutions",
+            bio: "8+ years in cybersecurity, digital forensics analyst, AP Police cybercrime consultant. Expert in SIEM, incident response.",
+            certifications: "CEH v12, CHFI, AZ-500, Certified Proofpoint Cybersecurity Trainer",
+            specialization: "SOC Leadership, SIEM, Threat Intelligence",
+            image_url: "https://placehold.co/120x120/4a5568/ffffff?text=Trainer",
+            batch_date: "10th December 2025",
+            registration_url: "https://forms.gle/YOURFORM"
+          });
+        }
+      }).catch(error => {
+        displayError(`Error fetching trainer/batch data: ${error.message}`);
+      });
+
+      // 2. Load Testimonials (Real-time Snapshot)
+      const testimonialsPath = `artifacts/${appId}/public/data/testimonials`;
+      const q = query(collection(db, testimonialsPath));
+      
+      onSnapshot(q, (querySnapshot) => {
+        const testimonialsContainer = document.getElementById('testimonials-container');
+        testimonialsContainer.innerHTML = ''; // Clear existing content
+        
+        if (querySnapshot.empty) {
+          testimonialsContainer.innerHTML = '<p class="text-gray-500 italic">No success stories yet. Be the first!</p>';
+        } else {
+          querySnapshot.forEach((doc) => {
+            const data = doc.data();
+            const testimonialHTML = `
+              <blockquote class="border-l-4 border-blue-500 pl-4 mb-4 bg-gray-50 p-4 rounded-lg shadow-sm">
+                “${data.quote}” 
+                <footer class="mt-2 text-sm text-gray-600">— 
+                  <span class="font-semibold">${data.graduate_name}</span> 
+                  <span class="text-xs">(${data.title || 'Recent Graduate'})</span>
+                </footer>
+              </blockquote>
+            `;
+            testimonialsContainer.innerHTML += testimonialHTML;
+          });
+        }
+      }, error => {
+        displayError(`Error listening to testimonials: ${error.message}`);
+      });
+    }
+
+    // Renderer functions
+    function renderTrainer(data) {
+      document.getElementById('trainer-image').src = data.image_url || "https://placehold.co/120x120/4a5568/ffffff?text=Trainer";
+      document.getElementById('trainer-image').onerror = () => {
+          document.getElementById('trainer-image').src = "https://placehold.co/120x120/4a5568/ffffff?text=Trainer";
+      };
+      document.getElementById('trainer-name').textContent = data.name;
+      document.getElementById('trainer-title').textContent = data.title;
+      document.getElementById('trainer-bio').textContent = data.bio;
+      document.getElementById('trainer-certs').textContent = data.certifications;
+      document.getElementById('trainer-specialization').textContent = data.specialization;
+      document.getElementById('user-id-display').textContent = `User ID: ${userId || 'Authenticating...'}`;
+    }
+
+    function renderBatch(data) {
+      const batchDate = data.batch_date || "TBD";
+      const regUrl = data.registration_url || "#";
+      
+      document.getElementById('batch-date-display').textContent = batchDate;
+      document.getElementById('register-btn-final').onclick = () => {
+        window.location.href = regUrl;
+      };
+    }
+
+    // Initialize the app when the window loads
+    window.onload = setupFirebase;
+
+  </script>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; color: #232323; }
-    header { background: #143263; color: #fff; padding: 32px 0; text-align: center; }
-    section { padding: 32px 16px; max-width: 900px; margin: auto; }
-    .highlights, .roadmap, .testimonials { background: #f6f8fc; border-radius: 10px; margin-bottom: 24px; }
-    h1, h2 { color: #143263; }
-    .trainer { display: flex; align-items: center; gap: 24px; background: #edf4fb; border-radius: 10px; padding: 24px;}
-    .trainer img { border-radius: 50%; width: 110px; height: 110px; border: 2px solid #143263; object-fit: cover;}
-    .register-btn { background: #143263; color: #fff; padding: 14px 32px; border: none; border-radius: 5px; font-size: 1em; cursor: pointer; }
-    footer { background: #143263; color: #fff; text-align: center; padding: 20px 0;}
-    @media (max-width: 600px) {
-      .trainer { flex-direction: column; text-align: center;}
-      .trainer img { margin-bottom: 12px; }
+    /* Custom utility to handle text size for small screens */
+    .text-balance {
+      text-wrap: balance;
     }
   </style>
 </head>
-<body>
+<body class="bg-gray-100 antialiased">
 
-<header>
-  <h1>CRSK Academy</h1>
-  <p>Master the Skills, Defend the Future<br><em>SOC Analyst Training Program</em></p>
+<!-- Tailwind Configuration: Font Inter is default in the environment -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'crsk-blue': '#143263',
+          'crsk-light': '#edf4fb',
+          'crsk-accent': '#00bcd4', /* Cyan for a techy accent */
+        }
+      }
+    }
+  }
+</script>
+
+<!-- Error Message Display -->
+<div id="error-message" class="hidden fixed top-0 left-0 right-0 bg-red-600 text-white p-3 text-center font-semibold z-50">
+  <!-- Error messages will be inserted here -->
+</div>
+
+<!-- Header Section (CRSK Brand Identity) -->
+<header class="bg-crsk-blue text-white shadow-lg py-10">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    
+    <!-- New Logo Container - Replaced SVG with the Gemini Generated Image -->
+    <div class="flex flex-col items-center justify-center mb-4">
+        <!-- New Image Logo -->
+        <img src="Gemini_Generated_Image_qvqlkbqvqlkbqvql.jpg" 
+             alt="CRSK Academy Logo: Shield, Network, and K symbol"
+             class="w-24 h-24 object-cover rounded-xl shadow-2xl" 
+             onerror="this.onerror=null; this.src='https://placehold.co/96x96/4a5568/ffffff?text=Logo';"
+        />
+
+        <h1 class="text-5xl font-extrabold tracking-tight mt-3">CRSK.Academy</h1>
+    </div>
+
+    <p class="mt-2 text-xl font-light text-crsk-accent text-balance">
+      Cyber Resilience Skill Knowledge
+    </p>
+    <p class="mt-1 text-sm text-gray-300" id="user-id-display">User ID: Authenticating...</p>
+    <p class="mt-4 text-2xl font-semibold">SOC Analyst Training Program</p>
+  </div>
 </header>
 
-<section>
-  <h2>About the Program</h2>
-  <p>
-    Gain practical SOC analyst skills with hands-on labs, real-world simulations, and career certifications. Our expert-led training helps you excel in threat detection, incident response, and security operations.
-  </p>
-</section>
+<!-- Main Content Area -->
+<main class="max-w-4xl mx-auto p-4 sm:p-6">
 
-<section class="highlights">
-  <h2>Course Highlights</h2>
-  <ul>
-    <li>Blue Team Fundamentals</li>
-    <li>Hands-on Labs: SIEM, SOAR, Threat Hunting</li>
-    <li>Real-Time Incident Scenarios</li>
-    <li>30/90/180 Day Upskilling Roadmap</li>
-    <li>Certification Preparation (BTL1, GIAC GSOC, etc.)</li>
-  </ul>
-</section>
-
-<section class="trainer">
-  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Trainer Photo">
-  <div>
-    <h2>Your Trainer: Sunil Kumar C R</h2>
-    <p><strong>SOC Manager, Bluecloud Softech Solutions</strong></p>
-    <p>8+ years in cybersecurity, digital forensics analyst, AP Police cybercrime consultant. Expert in SIEM, incident response, and SOC-as-a-Service implementation.</p>
-    <p>
-      <strong>Certifications:</strong> CEH v12, CHFI, AZ-500, Certified Proofpoint Cybersecurity Awareness Trainer<br>
-      <strong>Specialization:</strong> SOC Leadership, SIEM, Threat Intelligence
+  <!-- About and Program Summary -->
+  <section class="mb-8 p-6 bg-white rounded-xl shadow-lg">
+    <h2 class="text-3xl font-bold text-crsk-blue mb-4 border-b pb-2">About the Program</h2>
+    <p class="text-gray-700 leading-relaxed">
+      Unlock practical, in-demand SOC analyst skills with our expert-led program. We focus on training **Skill** and **Knowledge** rooted in **Cyber Resilience Strategy**. Gain hands-on experience with real-world simulations, master industry-leading SIEM/SOAR tools, and achieve certification readiness to excel in threat detection and incident response.
     </p>
-  </div>
-</section>
+    <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+        <li class="font-medium">Blue Team Fundamentals & Threat Hunting</li>
+        <li class="font-medium">Hands-on Labs: SIEM (Splunk, Sentinel), SOAR, DFIR</li>
+        <li class="font-medium">Certification Preparation (BTL1, GIAC GSOC concepts)</li>
+    </ul>
+  </section>
 
-<section class="roadmap">
-  <h2>Training Roadmap & Syllabus</h2>
-  <ul>
-    <li>Module 1: SOC Fundamentals & Tools Overview</li>
-    <li>Module 2: Hands-On Labs (ELK, Splunk, Devo, SIEM deployment)</li>
-    <li>Module 3: Threat Intelligence & IR Scenarios</li>
-    <li>Module 4: Advanced Blue Team Operations</li>
-    <li>Module 5: Certification Prep & Mock Interviews</li>
-  </ul>
-  <p><a href="#">Download Detailed Syllabus</a></p>
-</section>
+  <!-- Trainer Section (Dynamic) -->
+  <section class="mb-8 p-6 bg-crsk-light rounded-xl shadow-xl border-t-4 border-crsk-blue">
+    <h2 class="text-3xl font-bold text-crsk-blue mb-6">Your Expert Trainer</h2>
+    <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
+      <img id="trainer-image" src="https://placehold.co/120x120/4a5568/ffffff?text=Trainer" alt="Trainer Photo" class="rounded-full w-32 h-32 border-4 border-crsk-accent object-cover flex-shrink-0" onerror="this.onerror=null; this.src='https://placehold.co/120x120/4a5568/ffffff?text=Trainer';">
+      <div class="text-center md:text-left">
+        <h3 id="trainer-name" class="text-2xl font-bold text-gray-900">Loading...</h3>
+        <p id="trainer-title" class="text-lg font-semibold text-crsk-blue">Loading title...</p>
+        <p id="trainer-bio" class="mt-2 text-gray-700 italic">Loading bio...</p>
+        <div class="mt-4 text-sm">
+          <p class="font-semibold">Certifications:</p>
+          <p id="trainer-certs" class="text-gray-700">Loading certifications...</p>
+          <p class="font-semibold mt-2">Specialization:</p>
+          <p id="trainer-specialization" class="text-gray-700">Loading specialization...</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section>
-  <h2>Register / Contact</h2>
-  <p>Email: <a href="mailto:trainer@crsk.academy">trainer@crsk.academy</a></p>
-  <p>WhatsApp: <a href="https://wa.me/919999999999" target="_blank">+91 99999 99999</a></p>
-  <p>
-    <button class="register-btn" onclick="window.location.href='https://forms.gle/YOURFORM'">
-      Sign up for the Next Batch
+  <!-- Registration & Next Batch (Dynamic) -->
+  <section class="mb-8 p-6 bg-crsk-blue text-white rounded-xl shadow-2xl text-center">
+    <h2 class="text-3xl font-bold mb-4 text-crsk-accent">Ready to Start?</h2>
+    <p class="text-lg font-medium mb-4">
+      Next Batch Starts: <span id="batch-date-display" class="font-extrabold text-2xl text-yellow-300">Loading Date...</span>
+    </p>
+    <p class="text-lg mb-6">
+        Seats are limited. Secure your spot now to join the next wave of cyber defense professionals.
+    </p>
+    <button id="register-btn-final" 
+            class="bg-crsk-accent text-crsk-blue font-extrabold py-3 px-8 rounded-full text-xl uppercase tracking-wider shadow-lg hover:bg-yellow-400 transition duration-300 transform hover:scale-105"
+            onclick="window.location.href='#'">
+      Sign Up Today!
     </button>
-  </p>
-</section>
+  </section>
 
-<section class="testimonials">
-  <h2>Success Stories</h2>
-  <blockquote>
-    “I landed my first SOC analyst job after this training. The hands-on labs were game-changers!” — <i>Recent Graduate</i>
-  </blockquote>
-</section>
+  <!-- Testimonials Section (Dynamic with Real-Time Data) -->
+  <section class="mb-8 p-6 bg-white rounded-xl shadow-lg">
+    <h2 class="text-3xl font-bold text-crsk-blue mb-4 border-b pb-2">Success Stories</h2>
+    <div id="testimonials-container">
+      <!-- Testimonials will be loaded here dynamically from Firestore -->
+      <p class="text-gray-500 italic">Loading testimonials...</p>
+    </div>
+    <p class="text-center mt-6 text-gray-600">Want to share your success? Email us your quote!</p>
+  </section>
 
-<footer>
-  &copy; 2025 CRSK Academy &mdash; Connect: 
-  <a href="https://linkedin.com/in/YOURPROFILE" style="color:#fff;">LinkedIn</a>
+  <!-- Contact Section -->
+  <section class="mb-8 p-6 bg-crsk-light rounded-xl shadow-lg border-l-4 border-crsk-accent">
+    <h2 class="text-3xl font-bold text-crsk-blue mb-4">Contact & Inquiries</h2>
+    <!-- Updated Email -->
+    <p class="text-gray-700">Email: <a href="mailto:sunilkumar@crsk.academy" class="text-crsk-blue hover:underline">sunilkumar@crsk.academy</a></p>
+    <!-- Updated Phone Number -->
+    <p class="text-gray-700">WhatsApp: <a href="https://wa.me/919493950040" target="_blank" class="text-crsk-blue hover:underline">+91 94939 50040</a></p>
+  </section>
+
+</main>
+
+<footer class="bg-gray-800 text-white text-center py-6 text-sm">
+  &copy; 2025 CRSK.Academy &mdash; Cyber Resilience Skill Knowledge
+  <div class="mt-2 space-x-4">
+    <a href="#" class="text-gray-400 hover:text-white transition duration-200">Privacy Policy</a>
+    <a href="https://linkedin.com/in/YOURPROFILE" class="text-gray-400 hover:text-white transition duration-200">LinkedIn</a>
+  </div>
 </footer>
 
 </body>
