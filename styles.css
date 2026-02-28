@@ -1,0 +1,14 @@
+:root{--accent:#0b74de;--muted:#666}
+body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;color:#111}
+.container{max-width:900px;margin:0 auto;padding:24px}
+.hero{background:linear-gradient(135deg,#041a2b 0%,#0b3a66 100%);color:#fff;padding:60px 0;text-align:center}
+.hero h1{font-size:36px;margin:0}
+.tag{font-weight:600;margin-top:8px}
+.subtitle{max-width:720px;margin:12px auto 18px;color:#d7e9ff}
+.cta-row{display:flex;gap:12px;justify-content:center}
+.btn{display:inline-block;padding:12px 18px;border-radius:8px;text-decoration:none;color:#fff}
+.btn.enroll{background:var(--accent)}
+.btn.whatsapp{background:#25D366}
+main{background:#fafafa;padding:36px 0}
+section{margin-bottom:20px}
+.footer{background:#111;color:#fff;padding:12px 0;text-align:center}
