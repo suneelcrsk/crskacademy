@@ -1,311 +1,1583 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    body {background-color: #07090f}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #d9d9d9; -webkit-text-stroke: #d9d9d9; min-height: 15.0px}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 80.0px 'Helvetica Neue'; color: #1eeeff; -webkit-text-stroke: #1eeeff; min-height: 94.0px}
-    p.p4 {margin: 0.0px 0.0px 15.0px 0.0px; text-align: center; font: 21.6px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.8); -webkit-text-stroke: rgba(255, 255, 255, 0.8)}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.2px 'Helvetica Neue'; color: #fb0662; -webkit-text-stroke: #fb0662}
-    p.p6 {margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 12.6px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.7); -webkit-text-stroke: rgba(255, 255, 255, 0.7)}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.2px 'Helvetica Neue'; color: #1eeeff; -webkit-text-stroke: #1eeeff; min-height: 16.0px}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.2px 'Helvetica Neue'; color: #1eeeff; -webkit-text-stroke: #1eeeff}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.2px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; min-height: 16.0px}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.2px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 30.0px 'Helvetica Neue'; color: #1eeeff; -webkit-text-stroke: #1eeeff}
-    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.6); -webkit-text-stroke: rgba(255, 255, 255, 0.6)}
-    p.p13 {margin: 0.0px 0.0px 10.0px 0.0px; text-align: center; font: 10.8px 'Helvetica Neue'; color: #fb0662; -webkit-text-stroke: #fb0662}
-    p.p15 {margin: 0.0px 23.0px 0.0px 23.0px; text-align: center; text-indent: -23.0px; font: 12.0px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.5); -webkit-text-stroke: rgba(255, 255, 255, 0.5)}
-    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 28.0px 'Helvetica Neue'; color: #1eeeff; -webkit-text-stroke: #1eeeff; min-height: 33.0px}
-    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.8px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.6); -webkit-text-stroke: rgba(255, 255, 255, 0.6)}
-    p.p19 {margin: 0.0px 0.0px 5.0px 0.0px; font: 10.2px 'Helvetica Neue'; color: #1eeeff; -webkit-text-stroke: #1eeeff}
-    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.8px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.5); -webkit-text-stroke: rgba(255, 255, 255, 0.5)}
-    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.2px 'Helvetica Neue'; color: #1eeeff; -webkit-text-stroke: #1eeeff}
-    p.p23 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.8px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p25 {margin: 0.0px 0.0px 5.0px 0.0px; font: 10.2px 'Helvetica Neue'; color: #fb0662; -webkit-text-stroke: #fb0662}
-    p.p26 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.2px 'Helvetica Neue'; color: #fb0662; -webkit-text-stroke: #fb0662}
-    p.p27 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 32.0px 'Helvetica Neue'; color: #1eeeff; -webkit-text-stroke: #1eeeff; min-height: 38.0px}
-    p.p28 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p29 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.0px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.4); -webkit-text-stroke: rgba(255, 255, 255, 0.4)}
-    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; font: 22.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; min-height: 26.0px}
-    p.p32 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.2px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.5); -webkit-text-stroke: rgba(255, 255, 255, 0.5)}
-    p.p33 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 60.0px 'Helvetica Neue'; color: #1eeeff; -webkit-text-stroke: #1eeeff; min-height: 71.0px}
-    p.p35 {margin: 0.0px 0.0px 20.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.6); -webkit-text-stroke: rgba(255, 255, 255, 0.6)}
-    p.p36 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.8px 'Helvetica Neue'; color: #1eeeff; -webkit-text-stroke: #1eeeff; min-height: 12.0px}
-    p.p37 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.8px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.7); -webkit-text-stroke: rgba(255, 255, 255, 0.7)}
-    p.p38 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.8px 'Helvetica Neue'; color: #fdb50d; -webkit-text-stroke: #fdb50d; min-height: 12.0px}
-    p.p39 {margin: 0.0px 0.0px 20.0px 0.0px; font: 11.4px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.7); -webkit-text-stroke: rgba(255, 255, 255, 0.7)}
-    p.p40 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p41 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.6px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.4); -webkit-text-stroke: rgba(255, 255, 255, 0.4)}
-    p.p42 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #fb0662; -webkit-text-stroke: #fb0662; min-height: 15.0px}
-    p.p43 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #fb0662; -webkit-text-stroke: #fb0662}
-    p.p44 {margin: 0.0px 0.0px 30.0px 0.0px; text-align: center; font: 12.6px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.6); -webkit-text-stroke: rgba(255, 255, 255, 0.6)}
-    p.p45 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.2px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.4); -webkit-text-stroke: rgba(255, 255, 255, 0.4)}
-    p.p46 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.4px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.6); -webkit-text-stroke: rgba(255, 255, 255, 0.6)}
-    p.p47 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.2px 'Helvetica Neue'; color: #28ce53; -webkit-text-stroke: #28ce53; min-height: 16.0px}
-    p.p48 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 14.4px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.4); -webkit-text-stroke: rgba(255, 255, 255, 0.4); min-height: 17.0px}
-    p.p49 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.2px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.3); -webkit-text-stroke: rgba(255, 255, 255, 0.3)}
-    li.li24 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.6px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.6); -webkit-text-stroke: rgba(255, 255, 255, 0.6)}
-    span.s1 {font-kerning: none}
-    span.s2 {font: 13.2px '.Apple Color Emoji UI'; font-kerning: none}
-    span.s3 {font: 13.2px 'Helvetica Neue'; font-kerning: none; color: #ffffff; -webkit-text-stroke: 0px #ffffff}
-    span.s4 {font-kerning: none; background-color: rgba(13, 16, 30, 0.85)}
-    span.s5 {font: 10.2px '.Apple Color Emoji UI'; font-kerning: none; background-color: rgba(13, 16, 30, 0.85)}
-    span.s6 {background-color: rgba(13, 16, 30, 0.85); -webkit-text-stroke: 0px #000000}
-    span.s7 {font-kerning: none; background-color: rgba(30, 238, 255, 0.078)}
-    span.s8 {font-kerning: none; background-color: rgba(251, 6, 98, 0.15)}
-    span.s9 {font: 10.2px '.Apple Color Emoji UI'; font-kerning: none}
-    ul.ul1 {list-style-type: disc}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRSK.ACADEMY - Cybersecurity Career Brochure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #00f0ff;
+            --secondary: #7b2ff7;
+            --accent: #ff2d75;
+            --dark: #0a0e1a;
+            --darker: #060912;
+            --card-bg: rgba(15, 20, 40, 0.85);
+            --glow-cyan: 0 0 30px rgba(0, 240, 255, 0.3);
+            --glow-purple: 0 0 30px rgba(123, 47, 247, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--darker);
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .bg-animation canvas {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(ellipse at center, rgba(123, 47, 247, 0.15) 0%, transparent 50%),
+                        radial-gradient(ellipse at 80% 20%, rgba(0, 240, 255, 0.1) 0%, transparent 40%);
+            animation: rotate 30s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+
+        .shield-icon {
+            font-size: 80px;
+            color: var(--primary);
+            margin-bottom: 20px;
+            animation: pulse 2s ease-in-out infinite;
+            filter: drop-shadow(0 0 20px rgba(0, 240, 255, 0.5));
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 20px rgba(0, 240, 255, 0.5)); }
+            50% { transform: scale(1.1); filter: drop-shadow(0 0 40px rgba(0, 240, 255, 0.8)); }
+        }
+
+        .academy-name {
+            font-family: 'Orbitron', 'Courier New', monospace;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+        }
+
+        .hero-tagline {
+            font-family: 'Rajdhani', 'Trebuchet MS', sans-serif;
+            font-size: clamp(1.1rem, 3vw, 1.8rem);
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 8px 25px;
+            border: 2px solid var(--accent);
+            border-radius: 50px;
+            color: var(--accent);
+            font-family: 'Rajdhani', 'Trebuchet MS', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            animation: borderGlow 2s ease-in-out infinite;
+        }
+
+        @keyframes borderGlow {
+            0%, 100% { box-shadow: 0 0 10px rgba(255, 45, 117, 0.3); }
+            50% { box-shadow: 0 0 25px rgba(255, 45, 117, 0.6); }
+        }
+
+        .hero-desc {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 30px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            padding: 14px 35px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border: none;
+            border-radius: 50px;
+            color: #fff;
+            font-family: 'Rajdhani', 'Trebuchet MS', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 240, 255, 0.4);
+        }
+
+        .btn-secondary {
+            padding: 14px 35px;
+            background: transparent;
+            border: 2px solid var(--primary);
+            border-radius: 50px;
+            color: var(--primary);
+            font-family: 'Rajdhani', 'Trebuchet MS', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0, 240, 255, 0.1);
+            transform: translateY(-3px);
+            box-shadow: var(--glow-cyan);
+        }
+
+        .btn-whatsapp {
+            padding: 14px 35px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            border: none;
+            border-radius: 50px;
+            color: #fff;
+            font-family: 'Rajdhani', 'Trebuchet MS', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background: linear-gradient(135deg, rgba(123, 47, 247, 0.2), rgba(0, 240, 255, 0.1));
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(0, 240, 255, 0.2);
+            border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+            padding: 40px 20px;
+        }
+
+        .stats-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .stat-item .stat-number {
+            font-family: 'Orbitron', 'Courier New', monospace;
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--primary);
+            display: block;
+        }
+
+        .stat-item .stat-label {
+            font-family: 'Rajdhani', 'Trebuchet MS', sans-serif;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-label {
+            font-family: 'Rajdhani', 'Trebuchet MS', sans-serif;
+            font-size: 0.9rem;
+            color: var(--accent);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-family: 'Orbitron', 'Courier New', monospace;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .section-title span {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.5);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Why Cybersecurity */
+        .why-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .why-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(0, 240, 255, 0.1);
+            border-radius: 16px;
+            padding: 35px 25px;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .why-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .why-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(0, 240, 255, 0.3);
+            box-shadow: var(--glow-cyan);
+        }
+
+        .why-card .card-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, rgba(0, 240, 255, 0.1), rgba(123, 47, 247, 0.1));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: var(--primary);
+        }
+
+        .why-card h3 {
+            font-family: 'Rajdhani', 'Trebuchet MS', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .why-card p {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.6;
+        }
+
+        /* Course Overview Timeline */
+        .course-overview {
+            background: linear-gradient(180deg, transparent, rgba(123, 47, 247, 0.05), transparent);
+        }
+
+        .timeline-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .timeline-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .month-block {
+            background: var(--card-bg);
+            border: 1px solid rgba(0, 240, 255, 0.15);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .month-block:hover {
+            border-color: rgba(0, 240, 255, 0.4);
+            box-shadow: var(--glow-purple);
+        }
+
+        .month-header {
+            padding: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .month-block:first-child .month-header {
+            background: linear-gradient(135deg, rgba(0, 240, 255, 0.15), rgba(123, 47, 247, 0.15));
+        }
+
+        .month-block:last-child .month-header {
+            background: linear-gradient(135deg, rgba(255, 45, 117, 0.15), rgba(123, 47, 247, 0.15));
+        }
+
+        .month-number {
+            font-family: 'Orbitron', 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: var(--primary);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .month-block:last-child .month-number {
+            color: var(--accent);
+        }
+
+        .month-title {
+            font-family: 'Orbitron', 'Courier New', monospace;
+            font-size: 1.4rem;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .month-duration {
+            font-family: 'Rajdhani', 'Trebuchet MS', sans-serif;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 5px;
+        }
+
+        .month-content {
+            padding: 25px;
+        }
+
+        .week-section {
+            margin-bottom: 25px;
+        }
+
+        .week-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .week-label {
+            font-family: 'Rajdhani', 'Trebuchet MS', sans-serif;
+            font-size: 0.85rem;
+            color: var(--primary);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .month-block:last-child .week-label {
+            color: var(--accent);
+        }
+
+        .week-label::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: currentColor;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .week-title {
+            font-family: 'Rajdhani', 'Trebuchet MS', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .topic-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .topic-list li {
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.6);
+            padding: 4px 0;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .topic-list li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+        }
+
+        /* Tools Section */
+        .tools-section {
+            padding: 80px 20px;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .tool-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(0, 240, 255, 0.1);
+            border-radius: 12px;
+            padding: 25px 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 240, 255, 0.4);
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+        }
+
+        .tool-card .tool-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .tool-card .tool-name {
+            font-family: 'Rajdhani', 'Trebuchet MS', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        .tool-card .tool-type {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.4);
+            margin-top: 3px;
+        }
+
+        /* Career Paths */
+        .career-section {
+            padding: 80px 20px;
+            background: linear-gradient(180deg, transparent, rgba(0, 240, 255, 0.03), transparent);
+        }
+
+        .career-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .career-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(123, 47, 247, 0.15);
+            border-radius: 16px;
+            padding: 30px;
+            transition: all 0.4s ease;
+        }
+
+        .career-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(123, 47, 247, 0.5);
+            box-shadow: var(--glow-purple);
+        }
+
+        .career-card .role-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .career-card h3 {
+            font-family: 'Rajdhani', 'Trebuchet MS', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .career-card .salary {
+            font-family: 'Orbitron', 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .career-card p {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.5);
+            line-height: 1.5;
+        }
+
+        /* Certification */
+        .cert-section {
+            padding: 80px 20px;
+        }
+
+        .cert-card {
+            max-width: 900px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(123, 47, 247, 0.15), rgba(0, 240, 255, 0.1));
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            border-radius: 24px;
+            padding: 50px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cert-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent), var(--primary));
+            border-radius: 25px;
+            z-index: -1;
+            background-size: 300% 300%;
+            animation: gradientShift 4s ease infinite;
+            opacity: 0.3;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .cert-icon {
+            font-size: 60px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .cert-card h2 {
+            font-family: 'Orbitron', 'Courier New', monospace;
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .cert-features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .cert-feature {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 240, 255, 0.08);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .cert-feature i {
+            color: var(--primary);
+        }
+
+        /* Testimonials */
+        .testimonials-section {
+            padding: 80px 20px;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(123, 47, 247, 0.15);
+            border-radius: 16px;
+            padding: 30px;
+        }
+
+        .testimonial-card .stars {
+            color: #ffc107;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .testimonial-card .quote {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonial-card .author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .testimonial-card .avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Orbitron', 'Courier New', monospace;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        .testimonial-card .author-info .name {
+            font-family: 'Rajdhani', 'Trebuchet MS', sans-serif;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .testimonial-card .author-info .role {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, rgba(123, 47, 247, 0.2) 0%, transparent 70%);
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-family: 'Orbitron', 'Courier New', monospace;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .cta-desc {
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+
+        .batch-info {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 45, 117, 0.15);
+            border: 1px solid rgba(255, 45, 117, 0.3);
+            padding: 10px 25px;
+            border-radius: 50px;
+            margin-bottom: 25px;
+        }
+
+        .batch-info i {
+            color: var(--accent);
+        }
+
+        .batch-info span {
+            font-family: 'Rajdhani', 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+            color: var(--accent);
+            letter-spacing: 1px;
+        }
+
+        /* Contact Info */
+        .contact-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item:hover {
+            color: var(--primary);
+        }
+
+        .contact-item i {
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .contact-item.whatsapp-link i {
+            color: #25d366;
+        }
+
+        .contact-item.whatsapp-link:hover {
+            color: #25d366;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid rgba(0, 240, 255, 0.1);
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        footer .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+
+        footer .social-links a {
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        footer .social-links a:hover {
+            color: var(--primary);
+        }
+
+
+        .svg-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+            line-height: 1;
+        }
+        .svg-icon svg {
+            fill: currentColor;
+            width: 1em;
+            height: 1em;
+        }
+        .card-icon {
+            font-size: 28px;
+        }
+        .card-icon .svg-icon svg { width: 1.8em; height: 1.8em; }
+        .role-icon { font-size: 22px; }
+        .role-icon .svg-icon svg { width: 1.4em; height: 1.4em; }
+        .tool-icon { font-size: 32px; color: var(--primary); }
+        .tool-icon .svg-icon svg { width: 1em; height: 1em; }
+        .cert-icon { font-size: 60px; color: var(--primary); margin-bottom: 20px; display:block; }
+        .cert-icon .svg-icon svg { width: 1em; height: 1em; }
+        .shield-icon .svg-icon svg { width: 1em; height: 1em; }
+        .stars .svg-icon { display: inline-flex; }
+        .stars .svg-icon svg { width: 18px; height: 18px; }
+        footer .social-links a { font-size: 1.2rem; }
+        footer .social-links a .svg-icon svg { width: 1.2em; height: 1.2em; }
+        .btn-primary .svg-icon svg,
+        .btn-secondary .svg-icon svg,
+        .btn-whatsapp .svg-icon svg,
+        .contact-item .svg-icon svg { width: 1em; height: 1em; }
+        .batch-info .svg-icon svg { width: 1em; height: 1em; }
+        /* Scroll animations */
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero {
+                min-height: auto;
+                padding: 80px 15px 40px;
+            }
+
+            .shield-icon {
+                font-size: 50px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .stat-item .stat-number {
+                font-size: 1.8rem;
+            }
+
+            .section {
+                padding: 50px 15px;
+            }
+
+            .month-header, .month-content {
+                padding: 20px;
+            }
+
+            .tools-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 12px;
+            }
+
+            .cert-card {
+                padding: 30px 20px;
+            }
+
+            .contact-grid {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"></span><br></p>
-<h1 style="margin: 0.0px 0.0px 10.0px 0.0px; text-align: center; font: 40.0px 'Helvetica Neue'; color: #d9d9d9; -webkit-text-stroke: #d9d9d9"><span class="s1">CRSK.ACADEMY</span></h1>
-<p class="p4"><span class="s1">Launch Your Cybersecurity Career in Just 60 Days</span></p>
-<p class="p5"><span class="s2">🎓</span><span class="s1"> FOR WHO WANT TO START JOURNEY TOWARDS CYBERSECURITY</span></p>
-<p class="p6"><span class="s1">Zero experience? No problem. Our intensive 2-month program transforms fresh graduates into job-ready cybersecurity professionals with hands-on skills that employers demand.</span></p>
-<p class="p7"><span class="s1"></span><br></p>
-<p class="p8"><span class="s1">VIEW CURRICULUM</span></p>
-<p class="p9"><span class="s1"><a href="https://wa.me/919885550040?text=Hi%20CRSK.ACADEMY!%20I%27m%20interested%20in%20the%20Cybersecurity%20Course."></a></span><br></p>
-<p class="p10"><span class="s1"><a href="https://wa.me/919885550040?text=Hi%20CRSK.ACADEMY!%20I%27m%20interested%20in%20the%20Cybersecurity%20Course.">CHAT WITH US<span class="s3"></span></a></span></p>
-<p class="p11"><span class="s1">3.5M</span></p>
-<p class="p12"><span class="s1">UNFILLED CYBER JOBS GLOBALLY</span></p>
-<p class="p11"><span class="s1">95%</span></p>
-<p class="p12"><span class="s1">PLACEMENT ASSISTANCE RATE</span></p>
-<p class="p11"><span class="s1">60</span></p>
-<p class="p12"><span class="s1">DAYS TO JOB-READY</span></p>
-<p class="p11"><span class="s1">20+</span></p>
-<p class="p12"><span class="s1">INDUSTRY TOOLS COVERED</span></p>
-<p class="p13"><span class="s1">WHY CHOOSE THIS PATH</span></p>
-<h2 style="margin: 0.0px 0.0px 15.0px 0.0px; text-align: center; font: 30.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1">Why Cybersecurity Is Your Best Career Move</span></h2>
-<p class="p15"><span class="s1">The digital world needs defenders. With cyber threats growing exponentially, skilled professionals are in higher demand than ever before.</span></p>
-<p class="p16"><span class="s1"></span><br></p>
-<h3 style="margin: 0.0px 0.0px 10.0px 0.0px; text-align: center; font: 15.6px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s4">Explosive Growth</span></h3>
-<p class="p18"><span class="s4">Cybersecurity market projected to reach $500B+ by 2030 with 32% annual job growth — far outpacing other tech sectors.</span></p>
-<p class="p16"><span class="s1"></span><br></p>
-<h3 style="margin: 0.0px 0.0px 10.0px 0.0px; text-align: center; font: 15.6px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s4">High Salaries</span></h3>
-<p class="p18"><span class="s4">Entry-level cybersecurity analysts earn ₹4-8 LPA in India and $65K-$90K in the US. Senior roles exceed ₹25 LPA / $150K+.</span></p>
-<p class="p16"><span class="s1"></span><br></p>
-<h3 style="margin: 0.0px 0.0px 10.0px 0.0px; text-align: center; font: 15.6px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s4">Work Anywhere</span></h3>
-<p class="p18"><span class="s4">Remote-friendly roles, global demand, and opportunities across every industry — from finance and healthcare to government.</span></p>
-<p class="p16"><span class="s1"></span><br></p>
-<h3 style="margin: 0.0px 0.0px 10.0px 0.0px; text-align: center; font: 15.6px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s4">No Prior Experience Needed</span></h3>
-<p class="p18"><span class="s4">Unlike many tech careers, cybersecurity welcomes diverse educational backgrounds. Passion and willingness to learn is key.</span></p>
-<p class="p13"><span class="s1">COMPLETE COURSE CURRICULUM</span></p>
-<h2 style="margin: 0.0px 0.0px 15.0px 0.0px; text-align: center; font: 30.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1">2-Month Intensive Program</span></h2>
-<p class="p15"><span class="s1">A carefully structured program: 1 month of deep theory &amp; tools knowledge, followed by 1 month of immersive hands-on practical labs.</span></p>
-<p class="p19"><span class="s5">📖</span><span class="s4"> MONTH 1</span></p>
-<h3 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s4">Theory &amp; Tools</span></h3>
-<p class="p21"><span class="s4">Weeks 1–4 • Foundation Building</span></p>
-<p class="p22"><span class="s4">WEEK 1</span></p>
-<p class="p23"><span class="s4">Cybersecurity Fundamentals</span></p>
-<ul class="ul1">
-  <li class="li24"><span class="s6"></span><span class="s4">Introduction to Cybersecurity — CIA Triad, Threat Landscape</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Types of Cyberattacks: Phishing, Malware, Ransomware, DDoS, MitM</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Networking Essentials — OSI Model, TCP/IP, DNS, DHCP, Subnetting</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Operating System Security — Windows &amp; Linux Basics</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Introduction to Cryptography — Symmetric, Asymmetric, Hashing</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Security Policies, Compliance &amp; Frameworks (NIST, ISO 27001)</span></li>
-</ul>
-<p class="p22"><span class="s4">WEEK 2</span></p>
-<p class="p23"><span class="s4">Network Security &amp; Defense</span></p>
-<ul class="ul1">
-  <li class="li24"><span class="s6"></span><span class="s4">Firewalls — Types, Configuration, Rule Management</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">IDS/IPS Systems — Snort, Suricata Concepts</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">VPN Technologies &amp; Secure Remote Access</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Network Monitoring with Wireshark &amp; tcpdump</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">SIEM Concepts — Log Analysis &amp; Event Correlation</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Wireless Network Security — WPA3, Evil Twin Attacks</span></li>
-</ul>
-<p class="p22"><span class="s4">WEEK 3</span></p>
-<p class="p23"><span class="s4">Ethical Hacking &amp; Vulnerability Assessment</span></p>
-<ul class="ul1">
-  <li class="li24"><span class="s6"></span><span class="s4">Ethical Hacking Methodology — Reconnaissance to Reporting</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">OWASP Top 10 Vulnerabilities Explained</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Introduction to Nmap, Nikto, Dirb, Gobuster</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Vulnerability Scanning with Nessus &amp; OpenVAS</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Web Application Security Fundamentals</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Social Engineering Techniques &amp; Prevention</span></li>
-</ul>
-<p class="p22"><span class="s4">WEEK 4</span></p>
-<p class="p23"><span class="s4">Advanced Tools &amp; Concepts</span></p>
-<ul class="ul1">
-  <li class="li24"><span class="s6"></span><span class="s4">Introduction to Metasploit Framework</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Burp Suite for Web App Testing (Theory)</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Introduction to OSINT &amp; Threat Intelligence</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Malware Analysis Basics — Static vs Dynamic</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Incident Response Lifecycle &amp; Digital Forensics Intro</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Cloud Security Fundamentals — AWS/Azure Security Basics</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Career Paths in Cybersecurity &amp; Certification Roadmap</span></li>
-</ul>
-<p class="p25"><span class="s5">🛠️</span><span class="s4"> MONTH 2</span></p>
-<h3 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.8px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s4">Practical Labs</span></h3>
-<p class="p21"><span class="s4">Weeks 5–8 • Hands-On Mastery</span></p>
-<p class="p26"><span class="s4">WEEK 5</span></p>
-<p class="p23"><span class="s4">Network &amp; System Lab</span></p>
-<ul class="ul1">
-  <li class="li24"><span class="s6"></span><span class="s4">Lab Setup: Kali Linux, VirtualBox/VMware, Vulnerable VMs</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Hands-on Wireshark — Packet Capture &amp; Analysis</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Nmap Scanning — Host Discovery, Port Scanning, OS Detection</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Configuring &amp; Testing Firewall Rules (iptables/pfSense)</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Setting Up &amp; Analyzing Snort IDS Alerts</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Linux Privilege Escalation Techniques (Hands-on)</span></li>
-</ul>
-<p class="p26"><span class="s4">WEEK 6</span></p>
-<p class="p23"><span class="s4">Web Application Penetration Testing</span></p>
-<ul class="ul1">
-  <li class="li24"><span class="s6"></span><span class="s4">DVWA &amp; OWASP Juice Shop Setup &amp; Exploitation</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">SQL Injection — Manual &amp; with sqlmap</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Cross-Site Scripting (XSS) — Reflected, Stored, DOM</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Burp Suite Practicals — Intercepting, Repeating, Intruder</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">File Upload Vulnerabilities &amp; Directory Traversal</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Authentication Bypass &amp; Session Hijacking Labs</span></li>
-</ul>
-<p class="p26"><span class="s4">WEEK 7</span></p>
-<p class="p23"><span class="s4">Exploitation &amp; Post-Exploitation</span></p>
-<ul class="ul1">
-  <li class="li24"><span class="s6"></span><span class="s4">Metasploit Practicals — Exploiting Metasploitable 2/3</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Password Cracking with John the Ripper &amp; Hashcat</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Wireless Hacking Lab — Aircrack-ng Suite</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Creating &amp; Detecting Reverse Shells</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Post-Exploitation — Persistence, Data Exfiltration</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Basic Malware Analysis in Sandbox Environment</span></li>
-</ul>
-<p class="p26"><span class="s4">WEEK 8</span></p>
-<p class="p23"><span class="s4">CTF Challenges &amp; Capstone Project</span></p>
-<ul class="ul1">
-  <li class="li24"><span class="s6"></span><span class="s4">Capture The Flag (CTF) Challenges — TryHackMe &amp; HackTheBox</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">SIEM Lab — Splunk/ELK Stack Log Analysis</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Incident Response Simulation — Live Breach Scenario</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Digital Forensics Lab — Autopsy &amp; FTK Basics</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Capstone Project: Full Penetration Test &amp; Report Writing</span></li>
-  <li class="li24"><span class="s6"></span><span class="s4">Mock Interviews &amp; Resume Building Workshop</span></li>
-</ul>
-<p class="p13"><span class="s1">INDUSTRY ARSENAL</span></p>
-<h2 style="margin: 0.0px 0.0px 15.0px 0.0px; text-align: center; font: 30.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1">Tools You'll Master</span></h2>
-<p class="p15"><span class="s1">Get hands-on with the same tools used by top cybersecurity professionals and ethical hackers worldwide.</span></p>
-<p class="p27"><span class="s1"></span><br></p>
-<p class="p28"><span class="s4">Kali Linux</span></p>
-<p class="p29"><span class="s4">Pen Testing OS</span></p>
-<p class="p27"><span class="s1"></span><br></p>
-<p class="p28"><span class="s4">Metasploit</span></p>
-<p class="p29"><span class="s4">Exploitation</span></p>
-<p class="p27"><span class="s1"></span><br></p>
-<p class="p28"><span class="s4">Burp Suite</span></p>
-<p class="p29"><span class="s4">Web App Testing</span></p>
-<p class="p27"><span class="s1"></span><br></p>
-<p class="p28"><span class="s4">Wireshark</span></p>
-<p class="p29"><span class="s4">Packet Analysis</span></p>
-<p class="p27"><span class="s1"></span><br></p>
-<p class="p28"><span class="s4">Nmap</span></p>
-<p class="p29"><span class="s4">Network Scanner</span></p>
-<p class="p27"><span class="s1"></span><br></p>
-<p class="p28"><span class="s4">Nessus</span></p>
-<p class="p29"><span class="s4">Vuln Scanner</span></p>
-<p class="p27"><span class="s1"></span><br></p>
-<p class="p28"><span class="s4">sqlmap</span></p>
-<p class="p29"><span class="s4">SQL Injection</span></p>
-<p class="p27"><span class="s1"></span><br></p>
-<p class="p28"><span class="s4">Hashcat</span></p>
-<p class="p29"><span class="s4">Password Cracking</span></p>
-<p class="p27"><span class="s1"></span><br></p>
-<p class="p28"><span class="s4">Aircrack-ng</span></p>
-<p class="p29"><span class="s4">WiFi Hacking</span></p>
-<p class="p27"><span class="s1"></span><br></p>
-<p class="p28"><span class="s4">Splunk</span></p>
-<p class="p29"><span class="s4">SIEM</span></p>
-<p class="p27"><span class="s1"></span><br></p>
-<p class="p28"><span class="s4">Snort</span></p>
-<p class="p29"><span class="s4">IDS/IPS</span></p>
-<p class="p27"><span class="s1"></span><br></p>
-<p class="p28"><span class="s4">Autopsy</span></p>
-<p class="p29"><span class="s4">Forensics</span></p>
-<p class="p13"><span class="s1">YOUR FUTURE AWAITS</span></p>
-<h2 style="margin: 0.0px 0.0px 15.0px 0.0px; text-align: center; font: 30.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1">Career Paths After This Course</span></h2>
-<p class="p15"><span class="s1">Unlock multiple career opportunities across the cybersecurity domain.</span></p>
-<p class="p30"><span class="s1"></span><br></p>
-<h3 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 14.4px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s4">SOC Analyst (L1/L2)</span></h3>
-<p class="p22"><span class="s4">₹4–8 LPA / $55K–$80K</span></p>
-<p class="p32"><span class="s4">Monitor security events, analyze alerts, and respond to incidents in a Security Operations Center.</span></p>
-<p class="p30"><span class="s1"></span><br></p>
-<h3 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 14.4px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s4">Vulnerability Analyst</span></h3>
-<p class="p22"><span class="s4">₹5–10 LPA / $65K–$95K</span></p>
-<p class="p32"><span class="s4">Identify, classify, and help remediate security vulnerabilities across systems and applications.</span></p>
-<p class="p30"><span class="s1"></span><br></p>
-<h3 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 14.4px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s4">Jr. Penetration Tester</span></h3>
-<p class="p22"><span class="s4">₹6–12 LPA / $70K–$100K</span></p>
-<p class="p32"><span class="s4">Simulate real-world attacks to test organizational defenses and provide remediation guidance.</span></p>
-<p class="p30"><span class="s1"></span><br></p>
-<h3 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 14.4px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s4">Security Compliance Analyst</span></h3>
-<p class="p22"><span class="s4">₹4–9 LPA / $55K–$85K</span></p>
-<p class="p32"><span class="s4">Ensure organizations meet regulatory requirements like GDPR, HIPAA, PCI-DSS, and ISO standards.</span></p>
-<p class="p30"><span class="s1"></span><br></p>
-<h3 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 14.4px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s4">Digital Forensics Analyst</span></h3>
-<p class="p22"><span class="s4">₹5–10 LPA / $60K–$90K</span></p>
-<p class="p32"><span class="s4">Investigate cyber incidents, recover digital evidence, and assist in legal proceedings.</span></p>
-<p class="p30"><span class="s1"></span><br></p>
-<h3 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 14.4px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s4">Cloud Security Analyst</span></h3>
-<p class="p22"><span class="s4">₹6–14 LPA / $75K–$110K</span></p>
-<p class="p32"><span class="s4">Secure cloud infrastructure, manage access controls, and monitor cloud-based threats.</span></p>
-<p class="p13"><span class="s1">RECOGNITION</span></p>
-<h2 style="margin: 0.0px 0.0px 15.0px 0.0px; text-align: center; font: 30.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1">What You'll Earn</span></h2>
-<p class="p33"><span class="s1"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 15.0px 0.0px; text-align: center; font: 21.6px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1">CRSK.ACADEMY Certified Cybersecurity Professional</span></h2>
-<p class="p35"><span class="s1">Upon successful completion of the program including the capstone project, you'll receive an industry-recognized certification validating your skills.</span></p>
-<p class="p36"><span class="s1"></span><br></p>
-<p class="p37"><span class="s7">Verifiable Digital Certificate</span></p>
-<p class="p36"><span class="s1"></span><br></p>
-<p class="p37"><span class="s7">LinkedIn Badge</span></p>
-<p class="p36"><span class="s1"></span><br></p>
-<p class="p37"><span class="s7">Course Completion Portfolio</span></p>
-<p class="p36"><span class="s1"></span><br></p>
-<p class="p37"><span class="s7">Capstone Project Report</span></p>
-<p class="p36"><span class="s1"></span><br></p>
-<p class="p37"><span class="s7">CEH / CompTIA Security+ Prep Guide</span></p>
-<p class="p36"><span class="s1"></span><br></p>
-<p class="p37"><span class="s7">Lifetime Alumni Access</span></p>
-<p class="p13"><span class="s1">SUCCESS STORIES</span></p>
-<h2 style="margin: 0.0px 0.0px 15.0px 0.0px; text-align: center; font: 30.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1">What Our Graduates Say</span></h2>
-<p class="p38"><span class="s1"></span><br></p>
-<p class="p39"><span class="s4">"I graduated with a BCA degree and had zero security knowledge. Within 2 months at CRSK.ACADEMY, I was solving CTF challenges and landed a SOC Analyst role at a top MNC. This course changed my life!"</span></p>
-<p class="p40"><span class="s4">RP</span></p>
-<p class="p40"><span class="s4">Rahul Patel</span></p>
-<p class="p41"><span class="s4">SOC Analyst • Batch 2025</span></p>
-<p class="p38"><span class="s1"></span><br></p>
-<p class="p39"><span class="s4">"The practical labs were incredible. Using Metasploit, Burp Suite, and Wireshark on real vulnerable machines gave me confidence no textbook could. Highly recommend CRSK.ACADEMY for any fresh graduate!"</span></p>
-<p class="p40"><span class="s4">SK</span></p>
-<p class="p40"><span class="s4">Sneha Kulkarni</span></p>
-<p class="p41"><span class="s4">Jr. Pen Tester • Batch 2025</span></p>
-<p class="p38"><span class="s1"></span><br></p>
-<p class="p39"><span class="s4">"Coming from an Electronics background, I thought cybersecurity was out of reach. The mentors at CRSK.ACADEMY were amazing — patient, knowledgeable, and always available. Got placed within 3 weeks of completing!"</span></p>
-<p class="p40"><span class="s4">AJ</span></p>
-<p class="p40"><span class="s4">Arjun Joshi</span></p>
-<p class="p41"><span class="s4">Security Analyst • Batch 2025</span></p>
-<p class="p42"><span class="s1"></span><br></p>
-<p class="p43"><span class="s8">NEXT BATCH STARTING: MARCH 1, 2026</span></p>
-<h2 style="margin: 0.0px 0.0px 15.0px 0.0px; text-align: center; font: 30.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1">Ready to Become a<br>
-Cyber Defender?</span></h2>
-<p class="p44"><span class="s1">Seats are limited to 30 per batch to ensure personalized attention. Don't miss your chance to break into the fastest-growing tech career of the decade.</span></p>
-<p class="p9"><span class="s1"><a href="https://wa.me/919885550040?text=Hi%20CRSK.ACADEMY!%20I%27m%20interested%20in%20the%20Cybersecurity%20Course.%20Please%20share%20details."></a></span><br></p>
-<p class="p10"><span class="s1"><a href="https://wa.me/919885550040?text=Hi%20CRSK.ACADEMY!%20I%27m%20interested%20in%20the%20Cybersecurity%20Course.%20Please%20share%20details.">ENROLL VIA WHATSAPP<span class="s3"></span></a></span></p>
-<p class="p45"><span class="s9">💰</span><span class="s1"> 10% Early Bird Discount • No-questions-asked refund within 7 days</span></p>
-<p class="p7"><span class="s1"><a href="tel:+919885550040"></a></span><br></p>
-<p class="p46"><span class="s1"><a href="tel:+919885550040">+91 98855 50040</a></span></p>
-<p class="p7"><span class="s1"><a href="mailto:sunilkumar@crsk.academy"></a></span><br></p>
-<p class="p46"><span class="s1"><a href="mailto:sunilkumar@crsk.academy">sunilkumar@crsk.academy</a></span></p>
-<p class="p47"><span class="s1"><a href="https://wa.me/919885550040?text=Hi%20CRSK.ACADEMY!%20I%27m%20interested%20in%20the%20Cybersecurity%20Course."></a></span><br></p>
-<p class="p46"><span class="s1"><a href="https://wa.me/919885550040?text=Hi%20CRSK.ACADEMY!%20I%27m%20interested%20in%20the%20Cybersecurity%20Course.">Chat on WhatsApp</a></span></p>
-<p class="p48"><span class="s1"></span><br></p>
-<p class="p48"><span class="s1"></span><br></p>
-<p class="p48"><span class="s1"></span><br></p>
-<p class="p48"><span class="s1"></span><br></p>
-<p class="p48"><span class="s1"></span><br></p>
-<p class="p49"><span class="s1">© 2026 CRSK.ACADEMY. All rights reserved. | Empowering the Next Generation of Cyber Defenders.</span></p>
-</body>
-</html>
+
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <canvas id="bgCanvas"></canvas>
+    </div>
+
+    <div class="content-wrapper">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="shield-icon" style="font-size:80px;color:var(--primary);filter:drop-shadow(0 0 20px rgba(0,240,255,0.5));animation:pulse 2s ease-in-out infinite;">
+                    <span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></span>
+                </div>
+                <h1 class="academy-name">CRSK.ACADEMY</h1>
+                <p class="hero-tagline">Launch Your Cybersecurity Career in Just 60 Days</p>
+                <div class="hero-badge">🎓 OPEN TO ALL — NO PRIOR EXPERIENCE NEEDED</div>
+                <p class="hero-desc">
+                    Whether you're a <strong style="color:var(--primary)">fresher starting your career</strong>, an <strong style="color:var(--accent)">IT professional switching to cybersecurity</strong>, or from a <strong style="color:#7b2ff7">completely non-IT background</strong> — our intensive 2-month program transforms you into a job-ready cybersecurity professional with hands-on skills employers demand.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#curriculum" class="btn-secondary"><span class="svg-icon" style="margin-right:8px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></span> View Curriculum</a>
+                    <a href="https://wa.me/919885550040?text=Hi%20CRSK.ACADEMY!%20I%27m%20interested%20in%20the%20Cybersecurity%20Course." class="btn-whatsapp" target="_blank" rel="noopener"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.118.554 4.107 1.523 5.832L.057 23.428l5.752-1.507A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.882a9.875 9.875 0 01-5.031-1.378l-.361-.214-3.741.981.998-3.648-.235-.374A9.86 9.86 0 012.118 12C2.118 6.535 6.535 2.118 12 2.118S21.882 6.535 21.882 12 17.465 21.882 12 21.882z"/></svg></span> Chat With Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">3.5M</span>
+                    <span class="stat-label">Unfilled Cyber Jobs Globally</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Placement Assistance Rate</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">60</span>
+                    <span class="stat-label">Days to Job-Ready</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Industry Tools Covered</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Who Is This For -->
+        <section class="section fade-in" style="padding-top:60px;padding-bottom:0;">
+            <div class="section-header">
+                <p class="section-label">Is This For You?</p>
+                <h2 class="section-title">Your Background <span>Doesn't Matter</span> — Your Drive Does</h2>
+                <p class="section-subtitle">We've designed this program for three kinds of people ready to break into cybersecurity.</p>
+            </div>
+            <div class="why-cards" style="margin-bottom:0;">
+                <div class="why-card" style="border-color:rgba(0,240,255,0.3);background:linear-gradient(135deg,rgba(0,240,255,0.06),rgba(15,20,40,0.9));">
+                    <div class="card-icon" style="color:var(--primary);font-size:36px;"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 3L1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></span></div>
+                    <h3 style="color:var(--primary);">🎓 Freshers & Recent Graduates</h3>
+                    <p>BCA, B.Tech, BSc, BA — any degree, any stream. If you're starting your career and want to enter one of the highest-paying tech fields, this is your launchpad. Zero cybersecurity experience required.</p>
+                </div>
+                <div class="why-card" style="border-color:rgba(255,45,117,0.3);background:linear-gradient(135deg,rgba(255,45,117,0.06),rgba(15,20,40,0.9));">
+                    <div class="card-icon" style="color:var(--accent);font-size:36px;"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg></span></div>
+                    <h3 style="color:var(--accent);">💻 IT Professionals Switching Careers</h3>
+                    <p>Already working in software, networking, IT support, or any tech role? Your existing knowledge is a massive advantage. We'll help you pivot to cybersecurity and command a higher salary within 60 days.</p>
+                </div>
+                <div class="why-card" style="border-color:rgba(123,47,247,0.3);background:linear-gradient(135deg,rgba(123,47,247,0.06),rgba(15,20,40,0.9));">
+                    <div class="card-icon" style="color:#a855f7;font-size:36px;"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></span></div>
+                    <h3 style="color:#a855f7;">🌐 Non-IT Backgrounds Welcome</h3>
+                    <p>Commerce, Arts, Science, Engineering (non-CS) — if you can use a computer and have the hunger to learn, you belong here. Cybersecurity needs diverse thinkers, and we'll train you from absolute scratch.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI SOC Automation Highlight -->
+        <section class="section fade-in" style="padding-top:70px;">
+            <div style="max-width:900px;margin:0 auto;background:linear-gradient(135deg,rgba(0,240,255,0.08),rgba(123,47,247,0.12),rgba(255,45,117,0.06));border:2px solid rgba(0,240,255,0.35);border-radius:24px;padding:50px 40px;text-align:center;position:relative;overflow:hidden;">
+                <div style="position:absolute;top:-30px;right:-30px;width:150px;height:150px;background:radial-gradient(circle,rgba(0,240,255,0.15),transparent);border-radius:50%;"></div>
+                <div style="position:absolute;bottom:-30px;left:-30px;width:120px;height:120px;background:radial-gradient(circle,rgba(123,47,247,0.15),transparent);border-radius:50%;"></div>
+                <div style="font-size:60px;margin-bottom:15px;filter:drop-shadow(0 0 20px rgba(0,240,255,0.6));">🤖</div>
+                <div style="display:inline-block;background:linear-gradient(135deg,var(--primary),var(--secondary));padding:6px 20px;border-radius:50px;font-family:'Rajdhani',sans-serif;font-size:0.85rem;font-weight:700;letter-spacing:3px;color:#000;margin-bottom:15px;text-transform:uppercase;">⭐ Featured Course</div>
+                <h2 style="font-family:'Orbitron',sans-serif;font-size:clamp(1.4rem,3vw,2.2rem);font-weight:900;color:#fff;margin-bottom:15px;line-height:1.3;">AI SOC Automation Course</h2>
+                <p style="font-size:1.05rem;color:rgba(255,255,255,0.75);line-height:1.8;max-width:650px;margin:0 auto 25px;">
+                    The future of cybersecurity is AI-powered. Learn to build and operate <strong style="color:var(--primary)">AI-driven Security Operations Centers</strong> — automating threat detection, alert triage, and incident response using cutting-edge AI tools. Get ahead of 99% of cyber professionals before this becomes mainstream.
+                </p>
+                <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-bottom:30px;">
+                    <span style="background:rgba(0,240,255,0.1);border:1px solid rgba(0,240,255,0.3);padding:8px 18px;border-radius:50px;font-size:0.88rem;color:rgba(255,255,255,0.8);font-family:'Rajdhani',sans-serif;"><span class="svg-icon" style="color:var(--primary);margin-right:6px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" width="1em" height="1em"><path d="M320 0c17.7 0 32 14.3 32 32V96H472c39.8 0 72 32.2 72 72V440c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72H288V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h224c8.8 0 16-7.2 16-16s-7.2-16-16-16H208zm-16-96c0 17.7 14.3 32 32 32h192c17.7 0 32-14.3 32-32s-14.3-32-32-32H224c-17.7 0-32 14.3-32 32zm80-128c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16s16-7.2 16-16V176c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16s16-7.2 16-16V176c0-8.8-7.2-16-16-16z"/></svg></span>AI-Powered Threat Detection</span>
+                    <span style="background:rgba(0,240,255,0.1);border:1px solid rgba(0,240,255,0.3);padding:8px 18px;border-radius:50px;font-size:0.88rem;color:rgba(255,255,255,0.8);font-family:'Rajdhani',sans-serif;"><span class="svg-icon" style="color:var(--primary);margin-right:6px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg></span>Automated Incident Response</span>
+                    <span style="background:rgba(0,240,255,0.1);border:1px solid rgba(0,240,255,0.3);padding:8px 18px;border-radius:50px;font-size:0.88rem;color:rgba(255,255,255,0.8);font-family:'Rajdhani',sans-serif;"><span class="svg-icon" style="color:var(--primary);margin-right:6px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg></span>LLM-Based Alert Triage</span>
+                    <span style="background:rgba(0,240,255,0.1);border:1px solid rgba(0,240,255,0.3);padding:8px 18px;border-radius:50px;font-size:0.88rem;color:rgba(255,255,255,0.8);font-family:'Rajdhani',sans-serif;"><span class="svg-icon" style="color:var(--primary);margin-right:6px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg></span>SOAR Playbook Automation</span>
+                </div>
+                <div style="background:rgba(255,45,117,0.1);border:1px solid rgba(255,45,117,0.3);display:inline-block;padding:10px 30px;border-radius:12px;margin-bottom:10px;">
+                    <span style="font-family:'Orbitron',sans-serif;font-size:1.6rem;font-weight:900;color:#fff;">₹9,999</span>
+                    <span style="font-family:'Rajdhani',sans-serif;color:rgba(255,255,255,0.5);font-size:0.9rem;margin-left:8px;">Inclusive of all materials</span>
+                </div>
+                <br>
+                <div style="display:inline-flex;align-items:center;gap:10px;background:rgba(255,45,117,0.15);border:1px solid rgba(255,45,117,0.4);padding:10px 25px;border-radius:50px;margin-top:12px;">
+                    <span class="svg-icon" style="color:var(--accent);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/></svg></span>
+                    <span style="font-family:'Rajdhani',sans-serif;font-weight:700;color:var(--accent);letter-spacing:1px;font-size:1rem;">NEXT BATCH STARTS: MARCH 16, 2026</span>
+                </div>
+                <div style="margin-top:20px;">
+                    <a href="https://wa.me/919885550040?text=Hi%20CRSK.ACADEMY!%20I%27m%20interested%20in%20the%20AI%20SOC%20Automation%20Course." class="btn-whatsapp" target="_blank" rel="noopener" style="margin-top:10px;"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.118.554 4.107 1.523 5.832L.057 23.428l5.752-1.507A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.882a9.875 9.875 0 01-5.031-1.378l-.361-.214-3.741.981.998-3.648-.235-.374A9.86 9.86 0 012.118 12C2.118 6.535 6.535 2.118 12 2.118S21.882 6.535 21.882 12 17.465 21.882 12 21.882z"/></svg></span> Enroll in AI SOC Course</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section fade-in">
+            <div class="section-header">
+                <p class="section-label">Why Choose This Path</p>
+                <h2 class="section-title">Why <span>Cybersecurity</span> Is Your Best Career Move</h2>
+                <p class="section-subtitle">The digital world needs defenders. With cyber threats growing exponentially, skilled professionals are in higher demand than ever before.</p>
+            </div>
+            <div class="why-cards">
+                <div class="why-card">
+                    <div class="card-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg></span></div>
+                    <h3>Explosive Growth</h3>
+                    <p>Cybersecurity market projected to reach $500B+ by 2030 with 32% annual job growth — far outpacing other tech sectors.</p>
+                </div>
+                <div class="why-card">
+                    <div class="card-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z"/></svg></span></div>
+                    <h3>High Salaries</h3>
+                    <p>Entry-level cybersecurity analysts earn ₹4-8 LPA in India and $65K-$90K in the US. Senior roles exceed ₹25 LPA / $150K+.</p>
+                </div>
+                <div class="why-card">
+                    <div class="card-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></span></div>
+                    <h3>Work Anywhere</h3>
+                    <p>Remote-friendly roles, global demand, and opportunities across every industry — from finance and healthcare to government.</p>
+                </div>
+                <div class="why-card">
+                    <div class="card-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 3L1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></span></div>
+                    <h3>No Prior Experience Needed</h3>
+                    <p>Unlike many tech careers, cybersecurity welcomes diverse educational backgrounds. Passion and willingness to learn is key.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Curriculum -->
+        <section class="section course-overview fade-in" id="curriculum">
+            <div class="section-header">
+                <p class="section-label">Complete Course Curriculum</p>
+                <h2 class="section-title">2-Month <span>Intensive Program</span></h2>
+                <p class="section-subtitle">A carefully structured program: 1 month of deep theory & tools knowledge, followed by 1 month of immersive hands-on practical labs.</p>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Month 1 -->
+                <div class="month-block">
+                    <div class="month-header">
+                        <p class="month-number">📖 Month 1</p>
+                        <h3 class="month-title">Theory & Tools</h3>
+                        <p class="month-duration">Weeks 1–4 • Foundation Building</p>
+                    </div>
+                    <div class="month-content">
+                        <div class="week-section">
+                            <div class="week-label">Week 1</div>
+                            <div class="week-title">Cybersecurity Fundamentals</div>
+                            <ul class="topic-list">
+                                <li>Introduction to Cybersecurity — CIA Triad, Threat Landscape</li>
+                                <li>Types of Cyberattacks: Phishing, Malware, Ransomware, DDoS, MitM</li>
+                                <li>Networking Essentials — OSI Model, TCP/IP, DNS, DHCP, Subnetting</li>
+                                <li>Operating System Security — Windows & Linux Basics</li>
+                                <li>Introduction to Cryptography — Symmetric, Asymmetric, Hashing</li>
+                                <li>Security Policies, Compliance & Frameworks (NIST, ISO 27001)</li>
+                            </ul>
+                        </div>
+                        <div class="week-section">
+                            <div class="week-label">Week 2</div>
+                            <div class="week-title">Network Security & Defense</div>
+                            <ul class="topic-list">
+                                <li>Firewalls — Types, Configuration, Rule Management</li>
+                                <li>IDS/IPS Systems — Snort, Suricata Concepts</li>
+                                <li>VPN Technologies & Secure Remote Access</li>
+                                <li>Network Monitoring with Wireshark & tcpdump</li>
+                                <li>SIEM Concepts — Log Analysis & Event Correlation</li>
+                                <li>Wireless Network Security — WPA3, Evil Twin Attacks</li>
+                            </ul>
+                        </div>
+                        <div class="week-section">
+                            <div class="week-label">Week 3</div>
+                            <div class="week-title">Ethical Hacking & Vulnerability Assessment</div>
+                            <ul class="topic-list">
+                                <li>Ethical Hacking Methodology — Reconnaissance to Reporting</li>
+                                <li>OWASP Top 10 Vulnerabilities Explained</li>
+                                <li>Introduction to Nmap, Nikto, Dirb, Gobuster</li>
+                                <li>Vulnerability Scanning with Nessus & OpenVAS</li>
+                                <li>Web Application Security Fundamentals</li>
+                                <li>Social Engineering Techniques & Prevention</li>
+                            </ul>
+                        </div>
+                        <div class="week-section">
+                            <div class="week-label">Week 4</div>
+                            <div class="week-title">Advanced Tools & Concepts</div>
+                            <ul class="topic-list">
+                                <li>Introduction to Metasploit Framework</li>
+                                <li>Burp Suite for Web App Testing (Theory)</li>
+                                <li>Introduction to OSINT & Threat Intelligence</li>
+                                <li>Malware Analysis Basics — Static vs Dynamic</li>
+                                <li>Incident Response Lifecycle & Digital Forensics Intro</li>
+                                <li>Cloud Security Fundamentals — AWS/Azure Security Basics</li>
+                                <li>Career Paths in Cybersecurity & Certification Roadmap</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Month 2 -->
+                <div class="month-block">
+                    <div class="month-header">
+                        <p class="month-number">🛠️ Month 2</p>
+                        <h3 class="month-title">Practical Labs</h3>
+                        <p class="month-duration">Weeks 5–8 • Hands-On Mastery</p>
+                    </div>
+                    <div class="month-content">
+                        <div class="week-section">
+                            <div class="week-label">Week 5</div>
+                            <div class="week-title">Network & System Lab</div>
+                            <ul class="topic-list">
+                                <li>Lab Setup: Kali Linux, VirtualBox/VMware, Vulnerable VMs</li>
+                                <li>Hands-on Wireshark — Packet Capture & Analysis</li>
+                                <li>Nmap Scanning — Host Discovery, Port Scanning, OS Detection</li>
+                                <li>Configuring & Testing Firewall Rules (iptables/pfSense)</li>
+                                <li>Setting Up & Analyzing Snort IDS Alerts</li>
+                                <li>Linux Privilege Escalation Techniques (Hands-on)</li>
+                            </ul>
+                        </div>
+                        <div class="week-section">
+                            <div class="week-label">Week 6</div>
+                            <div class="week-title">Web Application Penetration Testing</div>
+                            <ul class="topic-list">
+                                <li>DVWA & OWASP Juice Shop Setup & Exploitation</li>
+                                <li>SQL Injection — Manual & with sqlmap</li>
+                                <li>Cross-Site Scripting (XSS) — Reflected, Stored, DOM</li>
+                                <li>Burp Suite Practicals — Intercepting, Repeating, Intruder</li>
+                                <li>File Upload Vulnerabilities & Directory Traversal</li>
+                                <li>Authentication Bypass & Session Hijacking Labs</li>
+                            </ul>
+                        </div>
+                        <div class="week-section">
+                            <div class="week-label">Week 7</div>
+                            <div class="week-title">Exploitation & Post-Exploitation</div>
+                            <ul class="topic-list">
+                                <li>Metasploit Practicals — Exploiting Metasploitable 2/3</li>
+                                <li>Password Cracking with John the Ripper & Hashcat</li>
+                                <li>Wireless Hacking Lab — Aircrack-ng Suite</li>
+                                <li>Creating & Detecting Reverse Shells</li>
+                                <li>Post-Exploitation — Persistence, Data Exfiltration</li>
+                                <li>Basic Malware Analysis in Sandbox Environment</li>
+                            </ul>
+                        </div>
+                        <div class="week-section">
+                            <div class="week-label">Week 8</div>
+                            <div class="week-title">CTF Challenges & Capstone Project</div>
+                            <ul class="topic-list">
+                                <li>Capture The Flag (CTF) Challenges — TryHackMe & HackTheBox</li>
+                                <li>SIEM Lab — Splunk/ELK Stack Log Analysis</li>
+                                <li>Incident Response Simulation — Live Breach Scenario</li>
+                                <li>Digital Forensics Lab — Autopsy & FTK Basics</li>
+                                <li>Capstone Project: Full Penetration Test & Report Writing</li>
+                                <li>Mock Interviews & Resume Building Workshop</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Covered -->
+        <section class="tools-section fade-in">
+            <div class="section-header">
+                <p class="section-label">Industry Arsenal</p>
+                <h2 class="section-title">Tools You'll <span>Master</span></h2>
+                <p class="section-subtitle">Get hands-on with the same tools used by top cybersecurity professionals and ethical hackers worldwide.</p>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg></span></div>
+                    <div class="tool-name">Kali Linux</div>
+                    <div class="tool-type">Pen Testing OS</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></span></div>
+                    <div class="tool-name">Metasploit</div>
+                    <div class="tool-type">Exploitation</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5s-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z"/></svg></span></div>
+                    <div class="tool-name">Burp Suite</div>
+                    <div class="tool-type">Web App Testing</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></span></div>
+                    <div class="tool-name">Wireshark</div>
+                    <div class="tool-type">Packet Analysis</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0-2C7.58 4 4 7.58 4 12s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm0 4c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"/></svg></span></div>
+                    <div class="tool-name">Nmap</div>
+                    <div class="tool-type">Network Scanner</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4c1.4 0 2.8 1.1 2.8 2.5S13.4 10 12 10c-1.4 0-2.8-1.1-2.8-2.5S10.6 5 12 5zm0 13c-2.7 0-5.8-1.29-7-3.32.03-2.32 4.67-3.58 7-3.58 2.33 0 6.97 1.26 7 3.58C16.8 16.71 14.7 18 12 18z"/></svg></span></div>
+                    <div class="tool-name">Nessus</div>
+                    <div class="tool-type">Vuln Scanner</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 3C7.58 3 4 4.79 4 7v10c0 2.21 3.59 4 8 4s8-1.79 8-4V7c0-2.21-3.58-4-8-4zm6 14c0 .5-2.13 2-6 2s-6-1.5-6-2v-2.23c1.61.78 3.72 1.23 6 1.23s4.39-.45 6-1.23V17zm0-5c0 .5-2.13 2-6 2s-6-1.5-6-2v-2.23c1.61.78 3.72 1.23 6 1.23s4.39-.45 6-1.23V12zm-6-3c-3.87 0-6-1.5-6-2s2.13-2 6-2 6 1.5 6 2-2.13 2-6 2z"/></svg></span></div>
+                    <div class="tool-name">sqlmap</div>
+                    <div class="tool-type">SQL Injection</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg></span></div>
+                    <div class="tool-name">Hashcat</div>
+                    <div class="tool-type">Password Cracking</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg></span></div>
+                    <div class="tool-name">Aircrack-ng</div>
+                    <div class="tool-type">WiFi Hacking</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></span></div>
+                    <div class="tool-name">Splunk</div>
+                    <div class="tool-type">SIEM</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 2C7.03 2 3 6.03 3 11c0 3.35 1.82 6.26 4.5 7.87V21c0 .55.45 1 1 1h7c.55 0 1-.45 1-1v-2.13c2.68-1.61 4.5-4.52 4.5-7.87C21 6.03 16.97 2 12 2zm-1 13H9v-2h2v2zm4 0h-2v-2h2v2zm-4-4H9V9h2v2zm4 0h-2V9h2v2z"/></svg></span></div>
+                    <div class="tool-name">Snort</div>
+                    <div class="tool-type">IDS/IPS</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M9.46 6.28l1.06 1.06c.39.39.39 1.02 0 1.41L8.41 11H10c3.31 0 6 2.69 6 6v1H4v-1c0-2.49 1.21-4.7 3.07-6.1L5.93 9.75c-.39-.39-.39-1.02 0-1.41L7.99 6.3l-.01-.01 1.48-1.48 1.41 1.41-1.41 1.06zm7.08-2.82l1.41 1.41-1.41 1.41-1.41-1.41 1.41-1.41z"/></svg></span></div>
+                    <div class="tool-name">Autopsy</div>
+                    <div class="tool-type">Forensics</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Paths -->
+        <section class="career-section fade-in">
+            <div class="section-header">
+                <p class="section-label">Your Future Awaits</p>
+                <h2 class="section-title">Career Paths <span>After This Course</span></h2>
+                <p class="section-subtitle">Unlock multiple career opportunities across the cybersecurity domain.</p>
+            </div>
+            <div class="career-grid">
+                <div class="career-card">
+                    <div class="role-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></span></div>
+                    <h3>SOC Analyst (L1/L2)</h3>
+                    <div class="salary">₹4–8 LPA / $55K–$80K</div>
+                    <p>Monitor security events, analyze alerts, and respond to incidents in a Security Operations Center.</p>
+                </div>
+                <div class="career-card">
+                    <div class="role-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></span></div>
+                    <h3>Vulnerability Analyst</h3>
+                    <div class="salary">₹5–10 LPA / $65K–$95K</div>
+                    <p>Identify, classify, and help remediate security vulnerabilities across systems and applications.</p>
+                </div>
+                <div class="career-card">
+                    <div class="role-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg></span></div>
+                    <h3>Jr. Penetration Tester</h3>
+                    <div class="salary">₹6–12 LPA / $70K–$100K</div>
+                    <p>Simulate real-world attacks to test organizational defenses and provide remediation guidance.</p>
+                </div>
+                <div class="career-card">
+                    <div class="role-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></span></div>
+                    <h3>Security Compliance Analyst</h3>
+                    <div class="salary">₹4–9 LPA / $55K–$85K</div>
+                    <p>Ensure organizations meet regulatory requirements like GDPR, HIPAA, PCI-DSS, and ISO standards.</p>
+                </div>
+                <div class="career-card">
+                    <div class="role-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M17.81 4.47c-.08 0-.16-.02-.23-.06C15.66 3.42 14 3 12.01 3c-1.98 0-3.86.47-5.57 1.41-.24.13-.54.04-.68-.2-.13-.24-.04-.55.2-.68C7.82 2.52 9.86 2 12.01 2c2.13 0 3.99.47 6.03 1.52.25.13.34.43.21.67-.09.18-.26.28-.44.28zM3.5 9.72c-.1 0-.2-.03-.29-.09-.23-.16-.28-.47-.12-.7.99-1.4 2.25-2.5 3.75-3.27C9.98 4.04 14 4.03 17.15 6.07c1.5.9 2.75 2.15 3.69 3.61.15.24.09.54-.14.7-.23.16-.54.09-.7-.14-.86-1.36-2-2.51-3.36-3.32-2.82-1.77-6.44-1.89-9.19-.43-1.35.7-2.51 1.74-3.4 3.03-.08.13-.21.2-.35.2zm6.25 12.07c-.13 0-.26-.05-.35-.15-.87-.87-1.34-1.43-2.01-2.64-.69-1.23-1.05-2.73-1.05-4.34 0-2.97 2.54-5.39 5.66-5.39s5.66 2.42 5.66 5.39c0 .28-.22.5-.5.5s-.5-.22-.5-.5c0-2.42-2.09-4.39-4.66-4.39-2.57 0-4.66 1.97-4.66 4.39 0 1.44.32 2.77.93 3.85.64 1.15 1.08 1.64 1.85 2.42.19.2.19.51 0 .71-.11.1-.24.15-.37.15zm7.17-1.45c-1.19.0-2.24-.3-3.1-.89-1.49-1.01-2.38-2.65-2.38-4.39 0-.28.22-.5.5-.5s.5.22.5.5c0 1.41.72 2.74 1.94 3.56.71.48 1.54.71 2.54.71.24 0 .64-.03 1.04-.1.27-.05.53.13.58.41.05.27-.13.53-.41.58-.57.11-1.07.12-1.21.12zM14.91 22c-.04 0-.09-.01-.13-.02-1.59-.44-2.63-1.03-3.72-2.1-1.4-1.39-2.17-3.24-2.17-5.22 0-1.62 1.38-2.94 3.08-2.94 1.7 0 3.08 1.32 3.08 2.94 0 1.07.93 1.94 2.08 1.94s2.08-.87 2.08-1.94c0-3.77-3.25-6.83-7.25-6.83-2.84 0-5.44 1.58-6.61 4.03-.39.81-.59 1.76-.59 2.8 0 .78.07 2.01.67 3.61.1.26-.03.55-.29.64-.26.1-.55-.04-.64-.29-.49-1.31-.73-2.61-.73-3.96 0-1.2.23-2.29.68-3.24 1.33-2.79 4.28-4.6 7.51-4.6 4.55 0 8.25 3.51 8.25 7.83 0 1.62-1.38 2.94-3.08 2.94s-3.08-1.32-3.08-2.94c0-1.07-.93-1.94-2.08-1.94s-2.08.87-2.08 1.94c0 1.71.66 3.31 1.87 4.51.95.94 1.86 1.46 3.27 1.85.27.07.42.35.35.61-.05.23-.26.38-.47.38z"/></svg></span></div>
+                    <h3>Digital Forensics Analyst</h3>
+                    <div class="salary">₹5–10 LPA / $60K–$90K</div>
+                    <p>Investigate cyber incidents, recover digital evidence, and assist in legal proceedings.</p>
+                </div>
+                <div class="career-card">
+                    <div class="role-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg></span></div>
+                    <h3>Cloud Security Analyst</h3>
+                    <div class="salary">₹6–14 LPA / $75K–$110K</div>
+                    <p>Secure cloud infrastructure, manage access controls, and monitor cloud-based threats.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certification -->
+        <section class="cert-section fade-in">
+            <div class="section-header">
+                <p class="section-label">Recognition</p>
+                <h2 class="section-title">What You'll <span>Earn</span></h2>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-3l-2 .01v-2l2-.01V9.5c0-1.66 1.34-3 3-3s3 1.34 3 3v1.5l2 .01v2l-2-.01v3h-2v-3h-2v3h-2z"/></svg></span></div>
+                <h2>CRSK.ACADEMY Certified Cybersecurity Professional</h2>
+                <p style="color: rgba(255,255,255,0.6); margin-bottom: 20px; line-height: 1.7;">
+                    Upon successful completion of the program including the capstone project,
+                    you'll receive an industry-recognized certification validating your skills.
+                </p>
+                <div class="cert-features">
+                    <div class="cert-feature"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></span> Verifiable Digital Certificate</div>
+                    <div class="cert-feature"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></span> LinkedIn Badge</div>
+                    <div class="cert-feature"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></span> Course Completion Portfolio</div>
+                    <div class="cert-feature"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></span> Capstone Project Report</div>
+                    <div class="cert-feature"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></span> CEH / CompTIA Security+ Prep Guide</div>
+                    <div class="cert-feature"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></span> Lifetime Alumni Access</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials-section fade-in">
+            <div class="section-header">
+                <p class="section-label">Success Stories</p>
+                <h2 class="section-title">What Our <span>Graduates</span> Say</h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars" style="color:#ffc107;font-size:18px;">
+                        <span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span>
+                    </div>
+                    <p class="quote">"I graduated with a BCA degree and had zero security knowledge. Within 2 months at CRSK.ACADEMY, I was solving CTF challenges and landed a SOC Analyst role at a top MNC. This course changed my life!"</p>
+                    <div class="author">
+                        <div class="avatar">RP</div>
+                        <div class="author-info">
+                            <div class="name">Rahul Patel</div>
+                            <div class="role">SOC Analyst • Batch 2025</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars" style="color:#ffc107;font-size:18px;">
+                        <span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span>
+                    </div>
+                    <p class="quote">"The practical labs were incredible. Using Metasploit, Burp Suite, and Wireshark on real vulnerable machines gave me confidence no textbook could. Highly recommend CRSK.ACADEMY for any fresh graduate!"</p>
+                    <div class="author">
+                        <div class="avatar">SK</div>
+                        <div class="author-info">
+                            <div class="name">Sneha Kulkarni</div>
+                            <div class="role">Jr. Pen Tester • Batch 2025</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars" style="color:#ffc107;font-size:18px;">
+                        <span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span>
+                    </div>
+                    <p class="quote">"Coming from an Electronics background, I thought cybersecurity was out of reach. The mentors at CRSK.ACADEMY were amazing — patient, knowledgeable, and always available. Got placed within 3 weeks of completing!"</p>
+                    <div class="author">
+                        <div class="avatar">AJ</div>
+                        <div class="author-info">
+                            <div class="name">Arjun Joshi</div>
+                            <div class="role">Security Analyst • Batch 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section fade-in">
+            <div class="cta-content">
+                <div class="batch-info">
+                    <span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/></svg></span>
+                    <span>NEXT BATCH STARTING: MARCH 16, 2026</span>
+                </div>
+                <h2 class="cta-title">Ready to Become a<br>Cyber Defender?</h2>
+                <p class="cta-desc">
+                    Seats are limited to 30 per batch to ensure personalized attention.
+                    Don't miss your chance to break into the fastest-growing tech career of the decade.
+                </p>
+                <div style="margin-bottom:20px;">
+                    <div style="display:inline-block;background:linear-gradient(135deg,rgba(0,240,255,0.1),rgba(123,47,247,0.1));border:2px solid rgba(0,240,255,0.4);border-radius:16px;padding:18px 40px;">
+                        <div style="font-family:'Rajdhani',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.5);letter-spacing:2px;text-transform:uppercase;margin-bottom:5px;">Course Fee</div>
+                        <div style="font-family:'Orbitron',sans-serif;font-size:2rem;font-weight:900;color:#fff;">₹9,999 <span style="font-size:1rem;color:rgba(255,255,255,0.5);font-family:'Rajdhani',sans-serif;">Inclusive</span></div>
+                    </div>
+                </div>
+                <div class="cta-buttons" style="margin-bottom: 20px;">
+                    <a href="https://wa.me/919885550040?text=Hi%20CRSK.ACADEMY!%20I%27m%20interested%20in%20the%20Cybersecurity%20Course.%20Please%20share%20details." class="btn-whatsapp" target="_blank" rel="noopener"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.118.554 4.107 1.523 5.832L.057 23.428l5.752-1.507A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.882a9.875 9.875 0 01-5.031-1.378l-.361-.214-3.741.981.998-3.648-.235-.374A9.86 9.86 0 012.118 12C2.118 6.535 6.535 2.118 12 2.118S21.882 6.535 21.882 12 17.465 21.882 12 21.882z"/></svg></span> Enroll via WhatsApp</a>
+                </div>
+                <p style="color: rgba(255,255,255,0.4); font-size: 0.85rem;">💰 10% Early Bird Discount • No-questions-asked refund within 7 days</p>
+
+                <div class="contact-grid">
+                    <a href="tel:+919885550040" class="contact-item">
+                        <span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></span>
+                        <span>+91 98855 50040</span>
+                    </a>
+                    <a href="/cdn-cgi/l/email-protection#7506001b1c191e00181407351607061e5b1416141110180c" class="contact-item">
+                        <span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span>
+                        <span><span class="__cf_email__" data-cfemail="4e3d3b202722253b232f3c0e2d3c3d25602f2d2f2a2b2337">[email&#160;protected]</span></span>
+                    </a>
+                    <a href="https://wa.me/919885550040?text=Hi%20CRSK.ACADEMY!%20I%27m%20interested%20in%20the%20Cybersecurity%20Course." class="contact-item whatsapp-link" target="_blank" rel="noopener">
+                        <span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.118.554 4.107 1.523 5.832L.057 23.428l5.752-1.507A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.882a9.875 9.875 0 01-5.031-1.378l-.361-.214-3.741.981.998-3.648-.235-.374A9.86 9.86 0 012.118 12C2.118 6.535 6.535 2.118 12 2.118S21.882 6.535 21.882 12 17.465 21.882 12 21.882z"/></svg></span>
+                        <span>Chat on WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="social-links">
+                <a href="#"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></span></a>
+                <a href="#"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.766l7.738-8.835L1.252 2.25H8.08l4.214 5.571 5.95-5.571zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></span></a>
+                <a href="#"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></span></a>
+                <a href="#"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></span></a>
+                <a href="https://wa.me/919885550040" target="_blank" rel="noopener"><span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.118.554 4.107 1.523 5.832L.057 23.428l5.752-1.507A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.882a9.875 9.875 0 01-5.031-1.378l-.361-.214-3.741.981.998-3.648-.235-.374A9.86 9.86 0 012.118 12C2.118 6.535 6.535 2.118 12 2.118S21.882 6.535 21.882 12 17.465 21.882 12 21.882z"/></svg></span></a>
+            </div>
+            <p>© 2026 CRSK.ACADEMY. All rights reserved. | Empowering the Next Generation of Cyber Defenders.</p>
+        </footer>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Background canvas animation
+        const canvas = document.getElementById('bgCanvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 0.5;
+                this.speedX = (Math.random() - 0.5) * 0.5;
+                this.speedY = (Math.random() - 0.5) * 0.5;
+                this.opacity = Math.random() * 0.5 + 0.1;
+                this.color = Math.random() > 0.5 ? '0, 240, 255' : '123, 47, 247';
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+                    this.reset();
+                }
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(${this.color}, ${this.opacity})`;
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < 80; i++) {
+            particles.push(new Particle());
+        }
+
+        function connectParticles() {
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < 150) {
+                        ctx.beginPath();
+                        ctx.strokeStyle = `rgba(0, 240, 255, ${0.05 * (1 - dist / 150)})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            connectParticles();
+            requestAnimationFrame(animate);
+        }
+        animate();
+
+        // Scroll fade-in animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targe
